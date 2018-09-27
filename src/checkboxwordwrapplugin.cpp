@@ -36,7 +36,7 @@ QString CheckBoxWordWrapPlugin::name() const
 
 QString CheckBoxWordWrapPlugin::group() const
 {
-    return QLatin1String("InfoDyne plugins");
+    return QLatin1String("My Custom Plugins");
 }
 
 QIcon CheckBoxWordWrapPlugin::icon() const
@@ -46,12 +46,12 @@ QIcon CheckBoxWordWrapPlugin::icon() const
 
 QString CheckBoxWordWrapPlugin::toolTip() const
 {
-    return QLatin1String("CheckBox avec word-wrap automatique");
+    return QLatin1String("CheckBox with word-wrap");
 }
 
 QString CheckBoxWordWrapPlugin::whatsThis() const
 {
-    return QLatin1String("Contrairement au checkbox qui bloque la taille minimal au texte complet, la il est possible de redimensionner plus petit que le texte.");
+    return QLatin1String("A Checkbox with auto word-wrap");
 }
 
 bool CheckBoxWordWrapPlugin::isContainer() const
