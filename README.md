@@ -1,4 +1,5 @@
 # qtCheckBoxWordWrapPlugin
+[![Build Status](https://travis-ci.org/thibDev/qtCheckBoxWordWrapPlugin.svg?branch=master)](https://travis-ci.org/thibDev/qtCheckBoxWordWrapPlugin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 
 A Qt plugin to use graphically QCheckbox with word wrap in QtDesigner

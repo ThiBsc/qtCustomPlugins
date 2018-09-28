@@ -1,0 +1,3 @@
+language: cpp
+before_install: sudo apt-get install qt5-default libqt5designer5 qttools5-dev
+script: qmake CheckBoxWordWrap.pro && make release
