@@ -17,12 +17,14 @@ class CheckBoxWordWrap : public QWidget
 
 public:
     CheckBoxWordWrap(QWidget *parent = Q_NULLPTR);
+    CheckBoxWordWrap(const QString &text, QWidget *parent = Q_NULLPTR);
     ~CheckBoxWordWrap();
     bool isChecked() const;
     bool isWordWrap() const;
     void setWordWrap(bool wordwrap);
     QString text() const;
     void setText(const QString &text);
+    QSize sizeHint() const override;
 
 public slots:
     void setChecked(bool checked);
@@ -30,7 +32,11 @@ public slots:
 private slots:
     void labelIsClicked();
 
+protected:
+    void resizeEvent(QResizeEvent *event) override;
+
 private:
+    void init();
     QHBoxLayout     *m_hMainLayout;
     QCheckBox       *m_checkBox;
     ClickableLabel  *m_label;
