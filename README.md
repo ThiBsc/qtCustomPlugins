@@ -41,7 +41,7 @@ make sub-[YourWantedPlugin]
 ## Install
 After the build step, take the `.so` file and copy it into the QtCreator directory.  
 Ex. `cp liblineeditregexplugin.so ~/Qt/Tools/QtCreator/lib/Qt/plugins/designer/`  
-If the plugin is correctly installed, they appear in menu `Tools/Form Editor/About Qt Designer plugins`  
+If the plugins are correctly installed, they appear in menu `Tools/Form Editor/About Qt Designer plugins`  
 ![active designer](screenshots/active_in_designer.png)
 
 ## Plugins icons
