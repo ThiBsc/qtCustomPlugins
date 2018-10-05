@@ -1,5 +1,5 @@
 # qtCustomPlugins
-[![Build Status](https://travis-ci.org/thibDev/qtCheckBoxWordWrapPlugin.svg?branch=master)](https://travis-ci.org/thibDev/qtCheckBoxWordWrapPlugin)
+[![Build Status](https://travis-ci.org/thibDev/qtCustomPlugins.svg?branch=master)](https://travis-ci.org/thibDev/qtCustomPlugins)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 
 A set of custom widgets to use directly in QtDesigner.
