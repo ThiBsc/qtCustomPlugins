@@ -22,7 +22,7 @@ public:
 	void setIcon(QIcon icon);
 
 protected:
-	virtual void paintEvent(QPaintEvent *event);
+	void paintEvent(QPaintEvent *event) override;
 
 private:
 	QIcon m_icon;
