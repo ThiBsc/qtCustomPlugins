@@ -30,6 +30,16 @@ bool CheckBoxWordWrap::isChecked() const
     return m_checkBox->isChecked();
 }
 
+bool CheckBoxWordWrap::isTristate() const
+{
+    return m_checkBox->isTristate();
+}
+
+void CheckBoxWordWrap::setTristate(bool tristate)
+{
+    return m_checkBox->setTristate(tristate);
+}
+
 bool CheckBoxWordWrap::isWordWrap() const
 {
     return m_label->wordWrap();

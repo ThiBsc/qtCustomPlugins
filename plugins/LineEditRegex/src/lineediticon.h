@@ -5,6 +5,7 @@
 #include <QIcon>
 
 /**
+ * @author thibdev
  * @brief The LineEditIcon class
  * Allow to add an icon before the text
  */

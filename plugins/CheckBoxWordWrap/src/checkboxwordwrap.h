@@ -7,11 +7,15 @@
 
 #include "clickablelabel.h"
 
+/**
+ * @author thibdev
+ */
 class CheckBoxWordWrap : public QWidget
 {
     Q_OBJECT
 
     Q_PROPERTY(bool checked READ isChecked WRITE setChecked)
+    Q_PROPERTY(bool tristate READ isTristate WRITE setTristate)
     Q_PROPERTY(bool wordwrap READ isWordWrap WRITE setWordWrap)
     Q_PROPERTY(QString text READ text WRITE setText)
 
@@ -20,6 +24,8 @@ public:
     CheckBoxWordWrap(const QString &text, QWidget *parent = Q_NULLPTR);
     ~CheckBoxWordWrap();
     bool isChecked() const;
+    bool isTristate() const;
+    void setTristate(bool tristate = true);
     bool isWordWrap() const;
     void setWordWrap(bool wordwrap);
     QString text() const;

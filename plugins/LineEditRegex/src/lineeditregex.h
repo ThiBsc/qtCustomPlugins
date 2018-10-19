@@ -7,6 +7,7 @@ class QRegularExpression;
 class QRegularExpressionValidator;
 
 /**
+ * @author thibdev
  * @brief The LineEditRegex class
  * Allow text by regular expression
  */
