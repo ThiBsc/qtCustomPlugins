@@ -33,9 +33,7 @@ void LineEditRegex::setPattern(const QString pattern)
 {
     if (!pattern.isEmpty()){
         regex->setPattern(pattern);
-        delete validator;
-        validator = new QRegularExpressionValidator(*regex, this);
-        setValidator(validator);
+        validator->setRegularExpression(QRegularExpression(pattern));
     }
 }
 
