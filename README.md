@@ -12,9 +12,9 @@ A set of custom widgets to use directly in QtDesigner.
 
 ## Plugins
 
-* [CheckBoxWordWrap](CheckBoxWordWrap/README.md)
-* [LineEditRegex](LineEditRegex/README.md)
-* [ImageFrame](ImageFrame/README.md)
+* [CheckBoxWordWrap](./plugins/CheckBoxWordWrap)
+* [LineEditRegex](./plugins/LineEditRegex)
+* [ImageFrame](./plugins/ImageFrame)
 
 ![plugins render](screenshots/plugins_results.png)
 
