@@ -12,10 +12,9 @@ A set of custom widgets to use directly in QtDesigner.
 
 ## Plugins
 
-|Plugin|Designer Properties|
-|-|-|
-|CheckBoxWordWrap|![checkbox properties](screenshots/checkboxwordwrap_properties.png)|
-|LineEditRegex|![checkbox properties](screenshots/lineeditregex_properties.png)|
+* [CheckBoxWordWrap](CheckBoxWordWrap/README.md)
+* [LineEditRegex](LineEditRegex/README.md)
+* [ImageFrame](ImageFrame/README.md)
 
 ![plugins render](screenshots/plugins_results.png)
 
@@ -48,6 +47,6 @@ If the plugins are correctly installed, they appear in menu `Tools/Form Editor/A
 
 ## Plugins icons
 
-CheckBoxWordWrap icon made by [Freepik](
+CheckBoxWordWrap and ImageFrame icon made by [Freepik](
 https://www.freepik.com/) from [Flaticon](www.flaticon.com)  
 LineEditRegex icon made by [Alfredo creates](https://www.alfredocreates.com/) from [Flaticon](www.flaticon.com)
