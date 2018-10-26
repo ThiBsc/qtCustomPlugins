@@ -49,5 +49,5 @@ If the plugins are correctly installed, they appear in menu `Tools/Form Editor/A
 ## Plugins icons
 
 CheckBoxWordWrap and ImageFrame icon made by [Freepik](https://www.freepik.com/) from [Flaticon](www.flaticon.com)  
-LineEditRegex icon made by [Alfredo creates](https://www.alfredocreates.com/) from [Flaticon](www.flaticon.com)
+LineEditRegex icon made by [Alfredo creates](https://www.alfredocreates.com/) from [Flaticon](www.flaticon.com)  
 CircularProgress icon made by [Smashicons](https://smashicons.com/) from [Flaticon](www.flaticon.com)
