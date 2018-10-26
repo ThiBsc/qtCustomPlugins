@@ -25,20 +25,12 @@ public:
     explicit CircularProgress(QWidget *parent = nullptr);
     void setProgressType(ProgressType progressType);
     qreal getValue() const;
-    void setValue(qreal value);
     qreal getMin() const;
-    void setMin(qreal min);
     qreal getMax() const;
-    void setMax(qreal max);
-    void setRange(qreal min, qreal max);
 	QColor getBgColor() const;
-	void setBgColor(QColor bgcolor);
 	QColor getValueColor() const;
-	void setValueColor(QColor valuecolor);
 	int getBarWidth() const;
-	void setBarWidth(int bwidth);
 	bool isShowingText() const;
-	void setTextVisible(bool visible = true);
 
 signals:
     void valueChanged(qreal nval);
@@ -46,6 +38,14 @@ signals:
     void maxChanged(qreal nmax);
 
 public slots:
+    void setValue(qreal value);
+    void setMin(qreal min);
+    void setMax(qreal max);
+    void setRange(qreal min, qreal max);
+	void setBgColor(QColor bgcolor);
+	void setValueColor(QColor valuecolor);
+	void setBarWidth(int bwidth);
+	void setTextVisible(bool visible = true);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
