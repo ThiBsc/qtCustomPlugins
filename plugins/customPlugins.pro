@@ -3,4 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS += ./CheckBoxWordWrap \
            ./LineEditRegex \
            ./ImageFrame \
-           ./CircularProgress
+           ./CircularProgress \
+           ./ComboBoxCheckable
