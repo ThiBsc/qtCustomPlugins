@@ -1,11 +1,16 @@
 #include "comboboxcheckable.h"
 #include "abstractlistmodelcheckablecbx.h"
+#include <QStyleFactory>
 
 ComboBoxCheckable::ComboBoxCheckable(QWidget *parent)
 	: QComboBox(parent)
 {
 	listModel = new AbstractListModelCheckableCbx();
 	setModel(listModel);
+#ifdef __GNUC__
+	// Force Windows style because Fusions doesn't show CheckBox in model
+	setStyle(QStyleFactory::create("Windows"));
+#endif
 
     connect(listModel, SIGNAL(selectionChanged()), this, SLOT(checkItem()));
 }

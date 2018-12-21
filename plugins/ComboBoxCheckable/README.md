@@ -2,7 +2,5 @@
 
 ## Properties
 
-|Property|Type|
-|-|-|
-|||
+Same properties as the QComboBox
 

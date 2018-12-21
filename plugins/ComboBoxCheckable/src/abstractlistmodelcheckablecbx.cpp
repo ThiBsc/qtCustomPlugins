@@ -73,7 +73,9 @@ bool AbstractListModelCheckableCbx::setData(const QModelIndex & index, const QVa
 
 void AbstractListModelCheckableCbx::addItem(const QString& item)
 {
-	_data->insert(item, false);
+	beginInsertRows(index(rowCount()), rowCount(), rowCount());
+    _data->insert(item, false);
+    endInsertRows();
 }
 
 void AbstractListModelCheckableCbx::clearItems()

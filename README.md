@@ -16,7 +16,7 @@ A set of custom widgets to use directly in QtDesigner.
 * [LineEditRegex](./plugins/LineEditRegex)
 * [ImageFrame](./plugins/ImageFrame)
 * [CircularProgress](./plugins/CircularProgress)
-* [ComboBoxCheckable](./plugins/ComboBoxCheckable) (Checkbox doesn't appear in linux, you can help me to find why)
+* [ComboBoxCheckable](./plugins/ComboBoxCheckable)
 
 ![plugins render](screenshots/plugins_results.png)
 
