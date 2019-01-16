@@ -14,6 +14,7 @@ A set of custom widgets to use directly in QtDesigner.
 
 * [CheckBoxWordWrap](./plugins/CheckBoxWordWrap)
 * [LineEditRegex](./plugins/LineEditRegex)
+* [LineEditTag](./plugins/LineEditTag)
 * [ImageFrame](./plugins/ImageFrame)
 * [CircularProgress](./plugins/CircularProgress)
 * [ComboBoxCheckable](./plugins/ComboBoxCheckable)
@@ -49,6 +50,6 @@ If the plugins are correctly installed, they appear in menu `Tools/Form Editor/A
 
 ## Plugins icons
 
-CheckBoxWordWrap and ImageFrame, ComboBoxCheckable icon made by [Freepik](https://www.freepik.com/) from [Flaticon](www.flaticon.com)  
+CheckBoxWordWrap, ImageFrame, ComboBoxCheckable and LineEditTag icon made by [Freepik](https://www.freepik.com/) from [Flaticon](www.flaticon.com)  
 LineEditRegex icon made by [Alfredo creates](https://www.alfredocreates.com/) from [Flaticon](www.flaticon.com)  
 CircularProgress icon made by [Smashicons](https://smashicons.com/) from [Flaticon](www.flaticon.com)
