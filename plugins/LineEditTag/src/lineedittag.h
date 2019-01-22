@@ -11,7 +11,7 @@ class LineEditTag : public QLineEdit
 {
     Q_OBJECT
 
-    Q_PROPERTY(QString tags READ getTagsStr WRITE setTags);
+    Q_PROPERTY(QString tags READ getTagsStr WRITE setTags)
 
 public:
     explicit LineEditTag(QWidget *parent = nullptr);
