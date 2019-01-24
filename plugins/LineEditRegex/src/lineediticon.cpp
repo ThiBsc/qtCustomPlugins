@@ -27,9 +27,9 @@ void LineEditIcon::setIcon(QIcon icon)
 {
 	m_icon = icon;
 	if (m_icon.isNull()){
-		setTextMargins(1, 1, 1, 1);
+		setTextMargins(0, 0, 0, 0);
 	} else {
-		setTextMargins(height(), 1, 1, 1);
+		setTextMargins(height(), 0, 0, 0);
 	}
 }
 
