@@ -115,7 +115,7 @@ void LineEditTag::paintEvent(QPaintEvent *evt)
             // Draw tag background and text
             painter.fillPath(tag_path, QBrush(tag_bg));
             painter.setPen(tag_txt);
-            painter.drawText(QPointF(r.x()+padding, r.bottom()-space), tag);
+            painter.drawText(QRectF(r.x()+padding, 0, tag_rect.width(), height()), Qt::AlignVCenter, tag);
             // Draw the cross to remove tag
             bool isHovered = r.contains(cursorPos);
             if (isHovered){
