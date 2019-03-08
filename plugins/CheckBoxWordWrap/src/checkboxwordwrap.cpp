@@ -1,18 +1,19 @@
 #include "checkboxwordwrap.h"
 
+#include <QStyle>
+#include <QStyleOptionButton>
+
 CheckBoxWordWrap::CheckBoxWordWrap(QWidget *parent)
-    : QWidget(parent)
+    : QCheckBox (parent)
     , m_hMainLayout(new QHBoxLayout(this))
-    , m_checkBox(new QCheckBox(this))
     , m_label(new ClickableLabel(this))
 {
     init();
 }
 
 CheckBoxWordWrap::CheckBoxWordWrap(const QString &text, QWidget *parent)
-    : QWidget(parent)
+    : QCheckBox (parent)
     , m_hMainLayout(new QHBoxLayout(this))
-    , m_checkBox(new QCheckBox(this))
     , m_label(new ClickableLabel(text, this))
 {
     init();
@@ -21,23 +22,7 @@ CheckBoxWordWrap::CheckBoxWordWrap(const QString &text, QWidget *parent)
 CheckBoxWordWrap::~CheckBoxWordWrap()
 {
     delete m_label;
-    delete m_checkBox;
     delete m_hMainLayout;
-}
-
-bool CheckBoxWordWrap::isChecked() const
-{
-    return m_checkBox->isChecked();
-}
-
-bool CheckBoxWordWrap::isTristate() const
-{
-    return m_checkBox->isTristate();
-}
-
-void CheckBoxWordWrap::setTristate(bool tristate)
-{
-    return m_checkBox->setTristate(tristate);
 }
 
 bool CheckBoxWordWrap::isWordWrap() const
@@ -63,19 +48,16 @@ void CheckBoxWordWrap::setText(const QString &text)
 QSize CheckBoxWordWrap::sizeHint() const
 {
     QFontMetrics fm(m_label->font());
-    QRect bRect = fm.boundingRect(m_label->rect(), int(Qt::AlignLeft | Qt::AlignVCenter | Qt::TextWordWrap), m_label->text());
+    QRect r = m_label->rect();
+    r.setLeft(r.left()+m_label->indent()+separation);
+    QRect bRect = fm.boundingRect(r, int(Qt::AlignLeft | Qt::AlignVCenter | Qt::TextWordWrap), m_label->text());
     QSize ret = QSize(QWidget::sizeHint().width(), bRect.height());
     return ret;
 }
 
-void CheckBoxWordWrap::setChecked(bool checked)
-{
-    m_checkBox->setChecked(checked);
-}
-
 void CheckBoxWordWrap::labelIsClicked()
 {
-    m_checkBox->setChecked(!isChecked());
+    setChecked(!isChecked());
 }
 
 void CheckBoxWordWrap::resizeEvent(QResizeEvent *event)
@@ -86,11 +68,15 @@ void CheckBoxWordWrap::resizeEvent(QResizeEvent *event)
 
 void CheckBoxWordWrap::init()
 {
+    setLayout(m_hMainLayout);
+    QStyleOptionButton opt;
+    initStyleOption(&opt);
+    int indicatorW = style()->pixelMetric(QStyle::PixelMetric::PM_IndicatorWidth, &opt, this);
+    int indicatorH = style()->pixelMetric(QStyle::PixelMetric::PM_IndicatorHeight, &opt, this);
+    int indent = qMax(indicatorW, indicatorH);
     m_hMainLayout->setContentsMargins(0, 0, 0, 0);
-    m_hMainLayout->addWidget(m_checkBox);
     m_hMainLayout->addWidget(m_label);
-
-    m_checkBox->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+    m_label->setIndent(indent+separation);
     m_label->setWordWrap(true);
 
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
