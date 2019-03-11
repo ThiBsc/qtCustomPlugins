@@ -72,11 +72,11 @@ void CheckBoxWordWrap::init()
     QStyleOptionButton opt;
     initStyleOption(&opt);
     int indicatorW = style()->pixelMetric(QStyle::PixelMetric::PM_IndicatorWidth, &opt, this);
-    int indicatorH = style()->pixelMetric(QStyle::PixelMetric::PM_IndicatorHeight, &opt, this);
-    int indent = qMax(indicatorW, indicatorH);
+    // Useless in our case, we only need the indicator width
+    //int indicatorH = style()->pixelMetric(QStyle::PixelMetric::PM_IndicatorHeight, &opt, this);
     m_hMainLayout->setContentsMargins(0, 0, 0, 0);
     m_hMainLayout->addWidget(m_label);
-    m_label->setIndent(indent+separation);
+    m_label->setIndent(indicatorW+separation);
     m_label->setWordWrap(true);
 
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
