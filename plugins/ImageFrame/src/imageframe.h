@@ -5,7 +5,7 @@
 #include <QPixmap>
 
 /**
- * @author thibdev
+ * @author thibsc
  * @brief The Image class
  */
 class ImageFrame : public QFrame

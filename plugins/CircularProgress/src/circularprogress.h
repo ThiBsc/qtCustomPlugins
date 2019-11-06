@@ -5,7 +5,7 @@
 #include <QPropertyAnimation>
 
 /**
- * @author thibdev
+ * @author thibsc
  * @brief The CircularProgress class
  */
 

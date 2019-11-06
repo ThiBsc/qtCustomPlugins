@@ -4,7 +4,7 @@
 #include <QAbstractListModel>
 
 /**
- * @author thibdev
+ * @author thibsc
  * @brief The AbstractListModelCheckableCbx class
  */
 class AbstractListModelCheckableCbx : public QAbstractListModel

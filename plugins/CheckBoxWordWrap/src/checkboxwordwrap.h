@@ -8,7 +8,7 @@
 #include "clickablelabel.h"
 
 /**
- * @author thibdev
+ * @author thibsc
  */
 class CheckBoxWordWrap : public QCheckBox
 {

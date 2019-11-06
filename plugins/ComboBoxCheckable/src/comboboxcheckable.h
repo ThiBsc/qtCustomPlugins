@@ -6,7 +6,7 @@
 class AbstractListModelCheckableCbx;
 
 /**
- * @author thibdev
+ * @author thibsc
  * @brief The ComboBoxCheckable class
  */
 class ComboBoxCheckable : public QComboBox

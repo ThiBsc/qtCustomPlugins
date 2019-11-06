@@ -4,7 +4,7 @@
 #include <QLineEdit>
 
 /**
- * @author thibdev
+ * @author thibsc
  * @brief The LineEditTag class
  */
 class LineEditTag : public QLineEdit
