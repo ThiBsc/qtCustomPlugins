@@ -1,7 +1,8 @@
 #ifndef LINEEDITREGEXPLUGIN_H
 #define LINEEDITREGEXPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
  * @brief The LineEditRegexPlugin class

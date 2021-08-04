@@ -1,7 +1,8 @@
 #ifndef LINEEDITTAGPLUGIN_H
 #define LINEEDITTAGPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
  * @brief The LineEditTagPlugin class

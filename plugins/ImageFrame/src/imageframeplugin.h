@@ -1,7 +1,8 @@
 #ifndef IMAGEFRAMEPLUGIN_H
 #define IMAGEFRAMEPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
  * @brief ImageFramePlugin class

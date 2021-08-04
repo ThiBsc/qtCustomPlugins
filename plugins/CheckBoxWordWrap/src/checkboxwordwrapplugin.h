@@ -1,7 +1,8 @@
 #ifndef CHECKBOXWORDWRAPPLUGIN_H
 #define CHECKBOXWORDWRAPPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
  * @brief The CheckBoxWordWrapPlugin class
