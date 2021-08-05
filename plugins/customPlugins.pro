@@ -5,4 +5,5 @@ SUBDIRS += ./CheckBoxWordWrap \
            ./LineEditTag \
            ./ImageFrame \
            ./CircularProgress \
-           ./ComboBoxCheckable
+           ./ComboBoxCheckable \
+           ./TFeCircularProgress \
