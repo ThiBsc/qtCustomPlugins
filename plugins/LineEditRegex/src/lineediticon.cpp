@@ -39,7 +39,8 @@ void LineEditIcon::paintEvent(QPaintEvent * event)
 	if (!m_icon.isNull()) {
 		QPainter painter(this);
 		QPixmap pxm = m_icon.pixmap(height() - 6, height() - 6);
-		int x = 2, cx = pxm.width();
+//		int x = 2, cx = pxm.width();
+        int cx = pxm.width();
 
 		painter.drawPixmap(2, 3, pxm);
 		painter.setPen(QColor("lightgrey"));

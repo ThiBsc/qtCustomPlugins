@@ -1,14 +1,13 @@
-#ifndef LINEEDITREGEXPLUGIN_H
-#define LINEEDITREGEXPLUGIN_H
+#pragma once
 
 //#include <QDesignerCustomWidgetInterface>
 #include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
- * @brief The LineEditRegexPlugin class
+ * @brief TFeCircularProgressPlugin class
  * http://doc.qt.io/archives/qt-4.8/designer-creating-custom-widgets.html
  */
-class LineEditRegexPlugin : public QObject, public QDesignerCustomWidgetInterface
+class TFeCircularProgressPlugin : public QObject, public QDesignerCustomWidgetInterface
 {
     Q_OBJECT
     Q_INTERFACES(QDesignerCustomWidgetInterface)
@@ -17,7 +16,7 @@ class LineEditRegexPlugin : public QObject, public QDesignerCustomWidgetInterfac
 #endif // QT_VERSION >= 0x050000
 
 public:
-    LineEditRegexPlugin(QObject *parent = Q_NULLPTR);
+    TFeCircularProgressPlugin(QObject *parent = Q_NULLPTR);
 
     bool isContainer() const;
     bool isInitialized() const;
@@ -34,5 +33,3 @@ public:
 private:
     bool m_initialized;
 };
-
-#endif // LINEEDITREGEXPLUGIN_H

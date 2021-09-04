@@ -1,7 +1,8 @@
 #ifndef COMBOBOXCHECKABLEPLUGIN_H
 #define COMBOBOXCHECKABLEPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 /**
  * @brief The ComboBoxCheckablePlugin class
